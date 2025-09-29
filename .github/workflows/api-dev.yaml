@@ -12,7 +12,7 @@ on:
         type: boolean
 
 env:
-  DOCKER_TAGS: dfxswiss/cusd-testnet-ponder:beta
+  DOCKER_TAGS: dfxswiss/cusd-ponder:beta
   AZURE_RESOURCE_GROUP: rg-dfx-api-dev
   AZURE_CONTAINER_APP: ca-dfx-cdtp-dev
   DEPLOY_INFO: ${{ github.ref_name }}-${{ github.sha }}
@@ -78,4 +78,5 @@ jobs:
         run: |
           az logout
         if: always()
+
 
